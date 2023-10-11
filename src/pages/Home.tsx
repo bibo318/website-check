@@ -162,7 +162,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="Enter a URL"
+          label="Nhập một URL"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
@@ -171,25 +171,25 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Analyze!</Button>
+        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Phân tích!</Button>
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>Kiểm tra được hỗ trợ</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
-            <li><a href="/about">+ more!</a></li>
+            <li><a href="/about">+ Hơn!</a></li>
           </ul>
         </div>
         <div className="links">
-          <a href="https://github.com/bibo318/website-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
+          <a href="https://github.com/bibo318/website-check" title="Kiểm tra mã nguồn và tài liệu trên GitHub và nhận hỗ trợ hoặc đóng góp">
+            <Button>Xem trên GitHub</Button>
           </a>
-          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/bibo318/website-check" title="Deploy your own private or public instance of website-check to Netlify">
-            <Button>Deploy your own</Button>
+          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/bibo318/website-check" title="Triển khai phiên bản website-check riêng bạn hoặc công khai của riêng bạn to Netlify">
+            <Button>Triển khai của riêng bạn</Button>
           </a>
-          <a href="/about#api-documentation" title="View the API documentation, to use website-check programmatically">
-            <Button>API Docs</Button>
+          <a href="/about#api-documentation" title="Xem tài liệu API để sử dụng tính năng kiểm tra trang web theo chương trình">
+            <Button>Tài liệu API</Button>
           </a>
         </div>
       </SiteFeaturesWrapper>
