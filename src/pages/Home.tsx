@@ -186,7 +186,7 @@ const Home = (): JSX.Element => {
             <Button>Xem trên GitHub</Button>
           </a>
           <a href="https://app.netlify.com/start/deploy?repository=https://github.com/bibo318/website-check" title="Triển khai phiên bản website-check riêng bạn hoặc công khai của riêng bạn to Netlify">
-            <Button>Triển khai của riêng bạn</Button>
+            <Button>Riêng bạn</Button>
           </a>
           <a href="/about#api-documentation" title="Xem tài liệu API để sử dụng tính năng kiểm tra trang web theo chương trình">
             <Button>Tài liệu API</Button>
